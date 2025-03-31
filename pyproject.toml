@@ -1,30 +1,27 @@
 [project]
 name = "tiara"
-version = "1.0.4rc2"
+version = "1.0.4rc3"
 authors = [
   { name="Micha?? Karlicki" }, { name="Stanis??aw Antonowicz", email="stas.antonowicz@gmail.com" }
 ]
 maintainers = [{name = "Josh L. Espinoza", email = "jolespin@newatlantis.io"}]
 description = "A tool for classifying metagenomic data"
 readme = "README.md"
-requires-python = ">=3.7,<3.10"
+requires-python = ">=3.7"
 classifiers = [
-    "Programming Language :: Python :: 3.7",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 keywords = ["machine-learning", "computational-biology"]
 dependencies = [
 "biopython",
+# "pyfastx",
 "joblib",
 "numba",
 "numpy>=1.17",
 "skorch>=0.9.0",
-"torch>=1.7.0,<2.0.0",
+"torch>=1.7.0",
 "tqdm"
-
 ]
 
 [project.scripts]

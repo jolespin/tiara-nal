@@ -5,6 +5,7 @@ import warnings
 from contextlib import suppress
 
 from Bio.SeqIO.FastaIO import SimpleFastaParser
+# import pyfastx
 from tqdm import tqdm
 from joblib import Parallel, delayed
 
